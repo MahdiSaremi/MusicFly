@@ -46,6 +46,7 @@ html, body {
     @apply h-4 w-4 ml-1;
 }
 
+/* Menu bar */
 #menu-toggle {
     &:focus, &:focus-within, &:focus-visible {
         + #menu {
@@ -71,4 +72,35 @@ html, body {
             width: ($i / 12) * 100%;
         }
     }
+}
+
+.music-scroll {
+    overflow-x: auto;
+    .container {
+        display: ruby;
+        width: inline-flex;
+        .music-scroll-box {
+            border-radius: $radius;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            @apply mx-4 my-3;
+            @apply p-3 bg-white shadow-md w-56 h-96;
+            img {
+                border-radius: $radius;
+                aspect-ratio: 1/1;
+                width: 100%;
+                @apply mb-2;
+            }
+        }
+    }
+}
+
+/* Buttons */
+.btn-primary {
+    @apply text-white transition-colors py-3 px-4 bg-pink-500 hover:bg-pink-600 rounded-st flex items-center justify-center;
+}
+.btn-secondary {
+    border: 1px solid;
+    @apply transition-colors py-3 px-4 border-pink-500 text-pink-500 hover:text-white hover:bg-pink-500 rounded-st flex items-center justify-center;
 }
