@@ -136,10 +136,24 @@ html, body {
 
 /* Buttons */
 .btn-primary {
-  @apply text-white transition-colors py-3 px-4 bg-pink-500 hover:bg-pink-600 rounded-st flex items-center justify-center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  @apply text-white transition-all py-3 px-4 bg-pink-500 hover:bg-pink-600 rounded-st flex items-center justify-center;
+}
+
+.btn-primary:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .btn-secondary {
   border: 1px solid;
-  @apply transition-colors py-3 px-4 border-pink-500 text-pink-500 hover:text-white hover:bg-pink-500 rounded-st flex items-center justify-center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  @apply transition-all py-3 px-4 border-pink-500 text-pink-500 hover:text-white hover:bg-pink-500 rounded-st flex items-center justify-center;
+}
+
+.btn-secondary:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }

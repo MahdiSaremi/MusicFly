@@ -45,7 +45,7 @@
         
     </nav>
 
-    @yield('main')
+    @yield('content')
 
     <!-- Footer -->
     <footer class="bg-white px-6 py-4 row items-center">
