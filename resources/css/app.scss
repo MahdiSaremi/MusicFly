@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$radius: 0.75rem;
+
+@font-face {
+    font-family: vazir;
+    src: url('../fonts/vazir.ttf');
+}
+
+html, body {
+    direction: rtl;
+    text-align: right;
+}
+
+* {
+    font-family: vazir, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.rounded-st {
+    border-radius: $radius;
+}
+
+.search {
+    input {
+        @apply h-full px-2 py-2 bg-gray-200;
+        transition: all ease .4s;
+        border-radius: 0 $radius $radius 0;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    button {
+        @apply h-full px-2 py-2 bg-gray-200 text-black;
+        transition: all ease .2s;
+        border-radius: $radius 0 0 $radius;
+        &:hover {
+            @apply bg-pink-500 text-white;
+        }
+    }
+}
+
+.icon-for-btn {
+    @apply h-4 w-4 ml-1;
+}
+
+#menu-toggle {
+    &:focus, &:focus-within, &:focus-visible {
+        + #menu {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+#menu {
+    &:focus, &:focus-within, &:focus-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@layer utilities {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @for $i from 1 to 13 {
+        .col-#{$i} {
+            width: ($i / 12) * 100%;
+        }
+    }
+}

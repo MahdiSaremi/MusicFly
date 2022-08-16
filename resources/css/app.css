@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/vazir.ttf");
+}
+
+html, body {
+  direction: rtl;
+  text-align: right;
+}
+
+* {
+  font-family: vazir, Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.rounded-st {
+  border-radius: 0.75rem;
+}
+
+.search input {
+  @apply h-full px-2 py-2 bg-gray-200;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.search input:focus-visible {
+  outline: none;
+}
+
+.search button {
+  @apply h-full px-2 py-2 bg-gray-200 text-black;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.search button:hover {
+  @apply bg-pink-500 text-white;
+}
+
+.icon-for-btn {
+  @apply h-4 w-4 ml-1;
+}
+
+#menu-toggle:focus + #menu, #menu-toggle:focus-within + #menu, #menu-toggle:focus-visible + #menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+#menu:focus, #menu:focus-within, #menu:focus-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+@layer utilities {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .col-1 {
+    width: 8.33333%;
+  }
+  .col-2 {
+    width: 16.66667%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33333%;
+  }
+  .col-5 {
+    width: 41.66667%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33333%;
+  }
+  .col-8 {
+    width: 66.66667%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33333%;
+  }
+  .col-11 {
+    width: 91.66667%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
