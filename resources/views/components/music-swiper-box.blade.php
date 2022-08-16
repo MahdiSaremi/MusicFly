@@ -1,5 +1,5 @@
 {{-- image, title, subtitle, url --}}
-<div class="music-scroll-box">
+<div class="swiper-slide music-swiper-box">
     <img src="{{ $image }}" alt="">
     <h3 class="text-lg">{{ $title }}</h3>
     @isset($subtitle)

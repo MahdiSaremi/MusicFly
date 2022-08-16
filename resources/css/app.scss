@@ -74,12 +74,12 @@ html, body {
     }
 }
 
-.music-scroll {
-    overflow-x: auto;
-    .container {
-        display: ruby;
-        width: inline-flex;
-        .music-scroll-box {
+.music-swiper {
+    overflow-x: hidden;
+    .swiper-wrapper {
+        display: inline-flex;
+        flex-direction: row;
+        .music-swiper-box {
             border-radius: $radius;
             text-align: center;
             display: flex;

@@ -104,16 +104,21 @@ html, body {
   }
 }
 
-.music-scroll {
-  overflow-x: auto;
+.music-swiper {
+  overflow-x: hidden;
 }
 
-.music-scroll .container {
-  display: ruby;
-  width: inline-flex;
+.music-swiper .swiper-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.music-scroll .container .music-scroll-box {
+.music-swiper .swiper-wrapper .music-swiper-box {
   border-radius: 0.75rem;
   text-align: center;
   display: -webkit-box;
@@ -127,7 +132,7 @@ html, body {
   @apply p-3 bg-white shadow-md w-56 h-96;
 }
 
-.music-scroll .container .music-scroll-box img {
+.music-swiper .swiper-wrapper .music-swiper-box img {
   border-radius: 0.75rem;
   aspect-ratio: 1/1;
   width: 100%;
