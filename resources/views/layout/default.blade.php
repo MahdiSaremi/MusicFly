@@ -10,7 +10,7 @@
         </main>
 
         <!-- Aside bar -->
-        <aside class="col-12 md:col-3 bg-gray-300 px-4 py-6">
+        <aside class="col-12 md:col-3 bg-gray-300 px-4 py-6 rounded-t-st lg:rounded-r-st">
             <section class="flex flex-col">
                 <p class="text-pink-500 mb-2">آهنگ های جدید</p>
                 <span class="flex items-center">

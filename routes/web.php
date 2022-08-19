@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/music', function () {
     return view('music.music');
 });
+
+Route::get('/list', function () {
+    return view('music.list');
+});
+
+Route::get('/login', function () {
+    return view('auth.login');
+});

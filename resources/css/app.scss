@@ -19,8 +19,22 @@ html, body {
     box-sizing: border-box;
 }
 
-.rounded-st {
-    border-radius: $radius;
+@layer utilities {
+    .rounded-st {
+        border-radius: $radius;
+    }
+    .rounded-r-st {
+        border-radius: 0 $radius $radius 0;
+    }
+    .rounded-l-st {
+        border-radius: $radius 0 0 $radius;
+    }
+    .rounded-t-st {
+        border-radius: $radius $radius 0 0;
+    }
+    .rounded-b-st {
+        border-radius: 0 0 $radius $radius;
+    }
 }
 
 .search {
@@ -99,7 +113,7 @@ html, body {
 /* Buttons */
 .btn-primary {
     transform: scale(1);
-    @apply text-white transition-all py-3 px-4 bg-pink-500 hover:bg-pink-600 rounded-st flex items-center justify-center;
+    @apply text-white transition-all py-2 px-4 bg-pink-500 hover:bg-pink-600 rounded-st flex items-center justify-center;
     &:active {
         transform: scale(.95);
     }
@@ -107,10 +121,13 @@ html, body {
 .btn-secondary {
     border: 1px solid;
     transform: scale(1);
-    @apply transition-all py-3 px-4 border-pink-500 text-pink-500 hover:text-white hover:bg-pink-500 rounded-st flex items-center justify-center;
+    @apply transition-all py-2 px-4 border-pink-500 text-pink-500 hover:text-white hover:bg-pink-500 rounded-st flex items-center justify-center;
     &:active {
         transform: scale(.95);
     }
+}
+.link {
+    @apply text-gray-400 hover:text-pink-500 transition-colors;
 }
 
 /* Break p */
@@ -132,4 +149,27 @@ html, body {
             filter: drop-shadow(0 5px 10px rgba(248, 251, 40, 0.567))
         }
     }
+}
+
+/* Info table */
+.info-table {
+    td {
+        @apply text-right px-2 py-1;
+    }
+}
+
+/* Forms */
+.form-group {
+    @apply my-4;
+    label {
+        @apply text-gray-700;
+    }
+    >* {
+        width: 100%;
+    }
+}
+.form-input {
+    @apply px-3 py-2 md:bg-gray-100 bg-gray-200;
+    border-radius: $radius;
+    outline: none;
 }

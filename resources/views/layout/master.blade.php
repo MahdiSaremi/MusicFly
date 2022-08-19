@@ -10,7 +10,7 @@
 
     @yield('head', '')
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body class="bg-gray-100 min-h-screen @yield('body-class', '')">
     
     <!-- Header navbar -->
     <nav class="bg-white px-2 py-2 flex shadow-md items-center">
@@ -33,7 +33,7 @@
                 <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
             </svg>
         </button>
-        <div class="mx-4 text-sm mr-auto flex opacity-0 invisible md:opacity-100 md:visible md:static absolute left-5 top-5 flex-col md:flex-row items-center bg-white md:bg-none rounded-st shadow-lg md:shadow-none py-3 transition-all" id="menu">
+        <div class="mx-4 text-sm mr-auto flex opacity-0 invisible md:opacity-100 md:visible md:static absolute left-5 top-5 flex-col md:flex-row items-center bg-white md:bg-none rounded-st shadow-lg md:shadow-none py-3 transition-all z-10" id="menu">
             <a class="mx-3 text-gray-500 hover:text-black transition-colors py-3" href="">صفحه اصلی</a>
             <a class="mx-3 text-gray-500 hover:text-black transition-colors py-3" href="">برترین ها</a>
             <a class="mx-3 btn-primary" href="">
