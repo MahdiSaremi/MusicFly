@@ -13,13 +13,13 @@
 <body class="bg-gray-100 min-h-screen @yield('body-class', '')">
     
     <!-- Header navbar -->
-    <nav class="bg-white px-2 py-2 flex shadow-md items-center">
+    <nav class="bg-white px-2 py-2 flex flex-wrap shadow-md items-center">
         <a href="" class="py-3 mx-4 flex">
             {{-- <img src="{{ asset('images/BeatFly-Small.png') }}" alt="" class=""> --}}
             موزیک فلای
         </a>
         <form action="" method=""
-            class="search flex h-full md:mx-4 mx-auto">
+            class="search h-full md:mx-4 mx-auto flex">
                 <input type="text" class="" placeholder="دنبال چی میگردی؟">
                 <button type="submit" class="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -28,7 +28,7 @@
                 </button>
         </form>
 
-        <button class="md:hidden mx-4" id="menu-toggle">
+        <button class="md:hidden mx-4 mr-auto sm:mr-4" id="menu-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
             </svg>

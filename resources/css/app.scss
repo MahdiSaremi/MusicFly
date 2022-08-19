@@ -38,8 +38,9 @@ html, body {
 }
 
 .search {
+    @apply order-last sm:order-none w-full sm:w-auto mt-2 sm:mt-0;
     input {
-        @apply h-full px-2 py-2 bg-gray-200;
+        @apply h-full px-2 py-2 bg-gray-100 w-[calc(100%-1.5rem)];
         transition: all ease .4s;
         border-radius: 0 $radius $radius 0;
         &:focus-visible {
@@ -169,7 +170,7 @@ html, body {
     }
 }
 .form-input {
-    @apply px-3 py-2 md:bg-gray-100 bg-gray-200;
+    @apply px-3 py-2 lg:bg-gray-100 bg-gray-200;
     border-radius: $radius;
     outline: none;
 }
