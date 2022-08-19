@@ -1,4 +1,4 @@
-let Elements = {
+Elements = {
 };
 
 (function(Elements) {

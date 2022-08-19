@@ -162,3 +162,28 @@ html, body {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
+
+/* Break p */
+.break-p {
+  letter-spacing: 0.5rem;
+}
+
+/* Score */
+.score {
+  @apply flex justify-center;
+}
+
+.score .score-star {
+  @apply fill-gray-400;
+  cursor: pointer;
+}
+
+.score .score-star.fill {
+  @apply fill-pink-500;
+}
+
+.score .score-star.target {
+  @apply fill-yellow-400;
+  -webkit-filter: drop-shadow(0 5px 10px rgba(248, 251, 40, 0.567));
+          filter: drop-shadow(0 5px 10px rgba(248, 251, 40, 0.567));
+}

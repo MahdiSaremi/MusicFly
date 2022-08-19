@@ -11,10 +11,10 @@
 
         <x-music-swiper>
             <x-music-swiper-box
-                title="عمو زنجیر باف"
-                subtitle="عمو پورنگ"
+                title="قاف"
+                subtitle="علیرضا طلیسچی"
                 url="#"
-                :image="asset('cover/Evan-Band-Binazire-Eshgh.jpg')"
+                :image="asset('cover/gsgsfsd.jpg')"
             />
                 
             <x-music-swiper-box
@@ -25,10 +25,10 @@
             />
             
             <x-music-swiper-box
-                title="عمو زنجیر باف"
-                subtitle="عمو پورنگ"
+                title="قاف"
+                subtitle="علیرضا طلیسچی"
                 url="#"
-                :image="asset('cover/Evan-Band-Binazire-Eshgh.jpg')"
+                :image="asset('cover/gsgsfsd.jpg')"
             />
             
             <x-music-swiper-box
