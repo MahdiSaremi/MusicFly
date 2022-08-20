@@ -11,8 +11,14 @@
                 name="email"
                 id="email"
                 class="form-input mt-2 text-left"
-                placeholder="email@domain.com">
+                placeholder="email@domain.com"
+                value="{{ old('email') }}">
+                
+            @error('email')
+                <p class="text-red-400 text-sm">{{ $error }}</p>
+            @enderror
         </div>
+        
         <div class="form-group">
             <label for="password">رمز عبور:</label>
             <input type="text"
@@ -20,11 +26,17 @@
                 id="password"
                 class="form-input mt-2 text-left"
                 placeholder="*******">
+                
+            @error('password')
+                <p class="text-red-400 text-sm">{{ $error }}</p>
+            @enderror
         </div>
+        
         <div class="text-center text-sm flex flex-col">
             <a href="#" class="link">رمز عبور را فراموش کرده اید؟ بازیابی کنید</a>
             <a href="#" class="link mt-6">حساب کاربری ندارید؟ ثبت نام کنید</a>
         </div>
+        
         <div class="flex justify-center mt-4">
             <a class="btn-secondary w-32 mx-1" href="#">
                 ثبت نام

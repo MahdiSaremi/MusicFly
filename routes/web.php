@@ -25,11 +25,11 @@ Route::get('/list', function () {
     return view('music.list');
 });
 
-Route::get('/login', function () {
-    return view('auth.login');
-});
-Route::get('/register', function () {
-    return view('auth.register');
-});
+// Route::get('/login', function () {
+//     return view('auth.login');
+// });
+// Route::get('/register', function () {
+//     return view('auth.register');
+// });
 
 Auth::routes();

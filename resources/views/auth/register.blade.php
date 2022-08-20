@@ -11,16 +11,28 @@
                 name="email"
                 id="email"
                 class="form-input mt-2 text-left"
-                placeholder="email@domain.com">
+                placeholder="email@domain.com"
+                value="{{ old('email') }}">
+                
+            @error('email')
+                <p class="text-red-400 text-sm">{{ $error }}</p>
+            @enderror
         </div>
+        
         <div class="form-group">
             <label for="name">نام شما:</label>
             <input type="text"
                 name="name"
                 id="name"
                 class="form-input mt-2"
-                placeholder="نام شما">
+                placeholder="نام شما"
+                value="{{ old('name') }}">
+                
+            @error('name')
+                <p class="text-red-400 text-sm">{{ $error }}</p>
+            @enderror
         </div>
+        
         <div class="form-group">
             <label for="password">رمز عبور:</label>
             <input type="text"
@@ -28,19 +40,26 @@
                 id="password"
                 class="form-input mt-2 text-left"
                 placeholder="*******">
+                
+            @error('password')
+                <p class="text-red-400 text-sm">{{ $error }}</p>
+            @enderror
         </div>
+        
         <div class="form-group">
             <label for="passwordConfirm">تکرار رمز عبور:</label>
             <input type="text"
-                name="passwordConfirm"
+                name="password_confirmation"
                 id="passwordConfirm"
                 class="form-input mt-2 text-left"
                 placeholder="*******">
         </div>
+        
         <div class="text-center text-sm flex flex-col">
             <a href="#" class="link">رمز عبور را فراموش کرده اید؟ بازیابی کنید</a>
-            <a href="#" class="link mt-6">حساب کاربری ندارید؟ ثبت نام کنید</a>
+            <a href="#" class="link mt-6">حساب کاربری دارید؟ وارد شوید</a>
         </div>
+        
         <div class="flex justify-center mt-4">
             <a class="btn-secondary w-32 mx-1" href="#">
                 ورود
