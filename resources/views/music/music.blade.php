@@ -6,6 +6,7 @@
 
 @section('main')
 
+    <!-- Title -->
     <section class="pt-8 pb-12 px-4 row">
         <div class="col-12 lg:col-4">
             <img src="{{ asset('cover/gsgsfsd.jpg') }}" alt="" class="w-full rounded-st">
@@ -33,6 +34,7 @@
         </div>
     </section>
     
+    <!-- Text -->
     <section class="pt-8 pb-12 px-4 text-center">
         <h2 class="text-2xl mb-4">متن آهنگ</h2>
         <div class="text-gray-800">
@@ -49,6 +51,7 @@
         </div>
     </section>
 
+    <!-- More Info -->
     <section class="pt-8 pb-12 px-4 text-center">
         <h2 class="text-2xl mb-4">اطلاعات بیشتر</h2>
         <div class="flex justify-center">
@@ -62,7 +65,7 @@
                         </td>
                         <td>خواننده:</td>
                         <td>
-                            <a href="#" class="underline">
+                            <a href="#" class="text-pink-500 hover:text-pink-600">
                                 علیرضا طلیسچی
                             </a>
                         </td>
@@ -76,11 +79,20 @@
                         <td>تاریخ انتشار:</td>
                         <td>12 بهمن 1400</td>
                     </tr>
+                    <tr>
+                        <td><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-gray-400 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                          </svg>
+                        </td>
+                        <td>سبک:</td>
+                        <td>پاپ</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
+    <!-- Rating -->
     <section class="pt-8 pb-12 px-4 text-center">
         <h2 class="text-xl mb-4">به این آهنگ امتیاز دهید</h2>
         <div class="score">
@@ -102,5 +114,51 @@
         </div>
         <p class="text-gray-600">امتیاز کل: 4.1 از 245 رای</p>
     </section>
+
+
+    <!-- Suggestion -->
+    <section class="pt-8 pb-12 px-4 text-center bg-gray-200">
+        <h2 class="text-xl mb-4">شاید این موارد را نیز بپسندید</h2>
+
+        <x-music-swiper>
+            <x-music-swiper-box
+                title="قاف"
+                subtitle="علیرضا طلیسچی"
+                url="#"
+                :image="asset('cover/gsgsfsd.jpg')"
+            />
+                
+            <x-music-swiper-box
+                title="عمو زنجیر باف"
+                subtitle="عمو پورنگ"
+                url="#"
+                :image="asset('cover/Evan-Band-Binazire-Eshgh.jpg')"
+            />
+            
+            <x-music-swiper-box
+                title="قاف"
+                subtitle="علیرضا طلیسچی"
+                url="#"
+                :image="asset('cover/gsgsfsd.jpg')"
+            />
+            
+            <x-music-swiper-box
+                title="عمو زنجیر باف"
+                subtitle="عمو پورنگ"
+                url="#"
+                :image="asset('cover/Evan-Band-Binazire-Eshgh.jpg')"
+            />
+            
+            <x-music-swiper-box
+                title="عمو زنجیر باف"
+                subtitle="عمو پورنگ"
+                url="#"
+                :image="asset('cover/Evan-Band-Binazire-Eshgh.jpg')"
+            />
+        </x-music-swiper>
+    </section>
+
+    
+    <x-load-music-swiper/>
 
 @endsection

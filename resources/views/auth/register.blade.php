@@ -4,7 +4,9 @@
     <h1 class="text-2xl mb-1">ثبت نام</h1>
     <p class="text-gray-400 text-sm mb-2">در سایت ثبت نام کنید تا از برخی امکانات سایت بهره مند شوید</p>
     <hr>
-    <form action="">
+    
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
         <div class="form-group">
             <label for="email">ایمیل:</label>
             <input type="text"
@@ -56,12 +58,11 @@
         </div>
         
         <div class="text-center text-sm flex flex-col">
-            <a href="#" class="link">رمز عبور را فراموش کرده اید؟ بازیابی کنید</a>
-            <a href="#" class="link mt-6">حساب کاربری دارید؟ وارد شوید</a>
+            <a href="{{ route('login') }}" class="link mt-6">حساب کاربری دارید؟ وارد شوید</a>
         </div>
         
         <div class="flex justify-center mt-4">
-            <a class="btn-secondary w-32 mx-1" href="#">
+            <a class="btn-secondary w-32 mx-1" href="{{ route('login') }}">
                 ورود
             </a>
             <button class="btn-primary w-32 mx-1">

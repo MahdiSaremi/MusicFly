@@ -185,6 +185,10 @@ html, body {
   @apply text-gray-400 hover:text-pink-500 transition-colors;
 }
 
+.link-gray {
+  @apply text-gray-500 hover:text-black transition-colors;
+}
+
 /* Break p */
 .break-p {
   letter-spacing: 0.5rem;
@@ -232,4 +236,28 @@ html, body {
   @apply px-3 py-2 lg:bg-gray-100 bg-gray-200;
   border-radius: 0.75rem;
   outline: none;
+}
+
+/* Dropdown */
+.dropdown-btn {
+  position: relative;
+}
+
+.dropdown-btn .dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 0.75rem;
+  z-index: 999;
+  @apply bg-white shadow-lg py-2 px-4 transition-all;
+  visibility: hidden;
+  opacity: 0;
+  border: 1px solid #ccc;
+}
+
+.dropdown-btn .dropdown-open:focus + .dropdown, .dropdown-btn .dropdown-open:focus-within + .dropdown, .dropdown-btn .dropdown-open:focus-visible + .dropdown {
+  visibility: visible;
+  opacity: 1;
 }

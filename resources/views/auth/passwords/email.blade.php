@@ -4,7 +4,9 @@
     <h1 class="text-2xl mb-1">بازیابی رمز</h1>
     <p class="text-gray-400 text-sm mb-2">رمز خود را فراموش کرده اید؟ ایمیل خود را وارد کنید تا با کمک آن رمز جدید بسازید</p>
     <hr>
-    <form action="">
+    
+    <form method="POST" action="{{ route('password.email') }}">
+        @csrf
         <div class="form-group">
             <label for="email">ایمیل:</label>
             <input type="text"
@@ -20,7 +22,7 @@
         </div>
 
         <div class="text-center text-sm flex flex-col">
-            <a href="#" class="link">بازگشت به صفحه ورود</a>
+            <a href="{{ route('login') }}" class="link">بازگشت به صفحه ورود</a>
         </div>
 
         <div class="flex justify-center mt-4">

@@ -34,8 +34,30 @@
             </svg>
         </button>
         <div class="mx-4 text-sm mr-auto flex opacity-0 invisible md:opacity-100 md:visible md:static absolute left-5 top-5 flex-col md:flex-row items-center bg-white md:bg-none rounded-st shadow-lg md:shadow-none py-3 transition-all z-10" id="menu">
-            <a class="mx-3 text-gray-500 hover:text-black transition-colors py-3" href="">صفحه اصلی</a>
-            <a class="mx-3 text-gray-500 hover:text-black transition-colors py-3" href="">برترین ها</a>
+            <a class="mx-3 link-gray py-3" href="">صفحه اصلی</a>
+
+            <span class="mx-3 dropdown-btn py-3" href="">
+                <button class="link-gray dropdown-open">دسته بندی ها</button>
+                <div class="dropdown">
+                    <div class="flex flex-col justify-center w-64">
+                        <a href="" class="link-gray py-3">دسته بندی اول</a>
+                        <a href="" class="link-gray py-3">دسته بندی دوم</a>
+                        <a href="" class="link-gray py-3">دسته بندی سوم</a>
+                    </div>
+                </div>
+            </span>
+            
+            <span class="mx-3 dropdown-btn py-3" href="">
+                <button class="link-gray dropdown-open">خواننده ها</button>
+                <div class="dropdown">
+                    <div class="flex flex-col justify-center w-64">
+                        <a href="" class="link-gray py-3">اول</a>
+                        <a href="" class="link-gray py-3">دوم</a>
+                        <a href="" class="link-gray py-3">سوم</a>
+                    </div>
+                </div>
+            </span>
+            
             <a class="mx-3 btn-primary" href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon-for-btn" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
