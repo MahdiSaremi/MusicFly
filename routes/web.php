@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,12 @@ Route::get('/list', function () {
 // });
 
 Auth::routes();
+
+Route::prefix('dashboard')
+    ->controller(DashboardController::class)
+    ->name('dashboard')
+    ->group(function() {
+
+    Route::get('', 'dashboard')->name('');
+
+});

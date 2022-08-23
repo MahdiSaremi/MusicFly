@@ -7,7 +7,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-pink-500 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
             </svg>
-            <h1 class="text-2xl">دسته بندی #پاپ</h1>
+            <h1 class="text-2xl">@yield('h1')</h1>
             <p class="text-gray-500 text-sm mr-2">( 468 مورد یافت شد )</p>
         </div>
 
@@ -35,9 +35,9 @@
 
                     <select name="singer" class="w-full mr-1 py-1">
                         <option value="">----</option>
-                        <option value="saab">علیرضا ظلیسچی</option>
-                        <option value="opel">مهراد جم</option>
-                        <option value="audi">عمو پورنگ</option>
+                        <option value="علیرضا ظلیسچی">علیرضا ظلیسچی</option>
+                        <option value="مهراد جم">مهراد جم</option>
+                        <option value="عمو پورنگ">عمو پورنگ</option>
                     </select>
                 </div>
             </div>
@@ -47,9 +47,9 @@
 
                     <select name="genre" class="w-full mr-1 py-1">
                         <option value="">----</option>
-                        <option value="pop">پاپ</option>
-                        <option value="rap">رپ</option>
-                        <option value="hiphop">هیپ هاپ</option>
+                        <option value="پاپ">پاپ</option>
+                        <option value="رپ">رپ</option>
+                        <option value="هیپ هاپ">هیپ هاپ</option>
                     </select>
                 </div>
             </div>
